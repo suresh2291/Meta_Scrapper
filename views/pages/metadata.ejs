@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>MetaData from URL</title>
+	<style>
+		.login-form {
+			width: 40%;
+			margin: 0 auto;
+            line-height:100%;
+			font-family: Tahoma, Geneva, sans-serif;
+		}
+
+	</style>
+</head>
+
+<body>
+	<div class="login-form">
+        <h1>Meta Data</h1>
+        <p>{</p>
+            <p><b>author:</b><%= metadata.author %>,</p>
+            <p><b>date:</b><%= metadata.date %>,</p>
+            <p><b>description:</b><%= metadata.description %>,</p>
+            <p><b>image:</b><a href="<%= metadata.image %>"><%= metadata.image%></a>,</p>
+            <p><b>logo:</b><a href="<%= metadata.logo %>"><%= metadata.logo %></a>,</p>
+            <p><b>publisher:</b><%= metadata.publisher %>,</p>
+            <p><b>title:</b><%= metadata.title %>,</p>
+            <p><b>url:</b><a href="<%= metadata.url %>"><%= metadata.url %></a>,</p>
+            <p><b>lang:</b><%= metadata.lang %>,</p>
+          <p>}</p>
+	</div>
+</body>
+
+</html>
