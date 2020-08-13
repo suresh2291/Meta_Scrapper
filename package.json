@@ -1,0 +1,38 @@
+{
+  "name": "scraper",
+  "version": "1.0.0",
+  "description": "scrape metadata from an article on the web using Open Graph, JSON+LD, regular HTML metadata, and series of fallbacks.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Amrutham Suresh Kumar",
+  "license": "ISC",
+  "dependencies": {
+    "@metascraper/helpers": "^5.14.2",
+    "cors": "^2.8.5",
+    "got": "^11.5.2",
+    "helmet": "^4.0.0",
+    "metascraper": "^5.14.2",
+    "metascraper-amazon": "^5.14.2",
+    "metascraper-author": "^5.14.2",
+    "metascraper-clearbit": "^5.14.2",
+    "metascraper-date": "^5.14.2",
+    "metascraper-description": "^5.14.2",
+    "metascraper-image": "^5.14.2",
+    "metascraper-lang": "^5.14.2",
+    "metascraper-logo": "^5.14.2",
+    "metascraper-logo-favicon": "^5.14.2",
+    "metascraper-media-provider": "^5.14.2",
+    "metascraper-publisher": "^5.14.2",
+    "metascraper-readability": "^5.14.2",
+    "metascraper-soundcloud": "^5.14.2",
+    "metascraper-spotify": "^5.14.2",
+    "metascraper-title": "^5.14.2",
+    "metascraper-url": "^5.14.2",
+    "metascraper-video": "^5.14.2",
+    "metascraper-youtube": "^5.14.2",
+    "restify": "^8.5.1",
+    "winston": "^3.3.3"
+  }
+}
