@@ -1,29 +1,30 @@
-/* test/unit/index.js */
-const should = require('should')
+/**
+ * Here i am checking one module function from meta scrapper "metascrapper-author"
+ * similar to we can check other details
+ */
 const metascraper = require('metascraper')([
   // loading our rules!
-  require('metascraper-logo')()
+  require('metascraper-author')()
 ])
 
 
-describe('metascraper-logo', () => {
-  it('create an absolute favicon url if the logo is not present', async () => {
+describe('metascraper-author', () => {
+  it('check the author details', async () => {
     const html = `
     <!DOCTYPE html>
     <html lang="en">
     <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta http-equiv="X-UA-Compatible" content="ie=edge">
       <title>My Test Html</title>
-      <meta property="og:logo" content="open graph value">
-      <meta itemprop="logo" content="itemprop value">
+      <meta property="og:author" content="AMRUTHAM sURESH">
+      <meta itemprop="author" content="itemprop value">
     </head>
     <body>
     </body>
     </html>
     `
+    const url = `https://github.com/phoenixGeek/inputForm_ejs_template/tree/master/views/pages`
     const meta = await metascraper({ html, url })
-    should(meta.log).be.equal("open graph value")
+    console.log(meta)
+    expect(meta.author).toBe('amrutham Suresh');
   })
 })

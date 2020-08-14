@@ -3,7 +3,7 @@
     "main": "server.js",
     "scripts": {
         "start": "nodemon server.js",
-        "test": "jest --watch"
+        "test": "jest"
     },
     "dependencies": {
         "@metascraper/helpers": "^5.14.2",
@@ -14,7 +14,6 @@
         "express-session": "^1.17.0",
         "got": "^11.5.2",
         "helmet": "^4.0.0",
-        "jest": "^26.4.0",
         "metascraper": "^5.14.2",
         "metascraper-amazon": "^5.14.2",
         "metascraper-author": "^5.14.2",
@@ -37,8 +36,11 @@
         "mysql": "^2.18.1",
         "nodemon": "^2.0.3",
         "session": "^0.1.0",
-        "should": "^13.2.3",
-        "supertest": "^4.0.2",
         "winston": "^3.3.3"
+    },
+    "devDependencies": {
+        "jest": "^26.4.0",
+        "should": "^13.2.3",
+        "supertest": "^4.0.2"
     }
 }
