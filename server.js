@@ -40,7 +40,11 @@ app.post('/parsedata', urlencodedParser, function (req, res, next) {
       
       const metadata = await metascraper({ html, url})
       console.log(metadata)
+     try{
       res.render('pages/metadata', {metadata:metadata});
+     }catch(err){
+res.render('pages/home',"something went Wrong, Please try again")
+     }
     })()
     
     

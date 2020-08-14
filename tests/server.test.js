@@ -1,6 +1,6 @@
 /**
  * Here i am checking one module function from meta scrapper "metascrapper-author"
- * similar to we can check other details
+ * similar to we can check other modules in the same fashion
  */
 const metascraper = require('metascraper')([
   // loading our rules!

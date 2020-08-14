@@ -2,7 +2,7 @@
     "name": "node-ejs",
     "main": "server.js",
     "scripts": {
-        "start": "nodemon server.js",
+        "start": "node server.js",
         "test": "jest"
     },
     "dependencies": {
