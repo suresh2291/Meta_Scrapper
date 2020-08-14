@@ -7,3 +7,4 @@ metascraper - A library to easily scrape metadata from an article on the web usi
 2.To start the application type the command "npm start" in cmd prompt or terminal<br />
 Backend code is found in server.js, frontend code in view folder.<br />
 
+Heroku Link: https://blooming-castle-93144.herokuapp.com/
